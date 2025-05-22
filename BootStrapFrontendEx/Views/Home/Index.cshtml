@@ -1,0 +1,159 @@
+﻿@{
+    ViewData["Title"] = "Crypto Dashboard";
+}
+
+<div class="container py-5">
+    <h2 class="mb-4">📈 Crypto Market Dashboard</h2>
+
+    <!-- Stat Cards -->
+    <div class="row g-4 mb-4">
+        <div class="col-md-3">
+            <div class="card text-bg-primary h-100">
+                <div class="card-body">
+                    <h5>Total Market Cap</h5>
+                    <h2>$2.35T</h2>
+                    <small>Updated just now</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-bg-success h-100">
+                <div class="card-body">
+                    <h5>Top Gainer</h5>
+                    <h2>Solana +12%</h2>
+                    <small>Last 24h</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-bg-danger h-100">
+                <div class="card-body">
+                    <h5>Top Loser</h5>
+                    <h2>Dogecoin -8%</h2>
+                    <small>Last 24h</small>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card text-bg-warning h-100">
+                <div class="card-body">
+                    <h5>BTC Dominance</h5>
+                    <h2>51%</h2>
+                    <small>Updated hourly</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Current Prices -->
+    <div class="container py-4">
+    <!-- Row 1: Prices & News -->
+    <div class="row mb-4">
+        <!-- Current Prices -->
+        <div class="col-lg-8 mb-3 mb-lg-0">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-dark text-light fw-semibold">
+                    📊 Current Prices
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-striped align-middle mb-0">
+                        <thead class="table-secondary text-dark">
+                            <tr>
+                                <th>Symbol</th>
+                                <th>Name</th>
+                                <th>Price</th>
+                                <th>24h Change</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><span class="badge bg-dark">BTC</span></td>
+                                <td>Bitcoin</td>
+                                <td><strong>$66,250</strong></td>
+                                <td class="text-success fw-bold">+1.2%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-dark">ETH</span></td>
+                                <td>Ethereum</td>
+                                <td><strong>$3,500</strong></td>
+                                <td class="text-danger fw-bold">-0.8%</td>
+                            </tr>
+                            <tr>
+                                <td><span class="badge bg-dark">ADA</span></td>
+                                <td>Cardano</td>
+                                <td><strong>$0.45</strong></td>
+                                <td class="text-success fw-bold">+5.1%</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <!-- Latest News -->
+        <div class="col-lg-4">
+            <div class="card shadow-sm h-100">
+                <div class="card-header bg-dark text-light fw-semibold">
+                    📰 Latest Crypto News
+                </div>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>Bitcoin ETF gets green light from regulators</div>
+                        <span class="badge bg-secondary rounded-pill">2h ago</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>Ethereum devs hint at major upgrade</div>
+                        <span class="badge bg-secondary rounded-pill">6h ago</span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <div>Crypto adoption rising in Latin America</div>
+                        <span class="badge bg-secondary rounded-pill">1 day ago</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row 2: Market Summary, Alerts, Events -->
+    <div class="row">
+        <!-- Market Summary -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-header bg-secondary text-white">📈 Market Summary</div>
+                <div class="card-body">
+                    <p>Global Crypto Cap: <strong>$1.7T</strong></p>
+                    <p>Dominance: <strong>BTC 45%, ETH 19%</strong></p>
+                    <p>Trending: <span class="badge bg-warning text-dark">SOL</span> <span class="badge bg-warning text-dark">AVAX</span></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Alerts -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-header bg-warning text-dark">🔔 Alerts</div>
+                <div class="card-body">
+                    <ul class="list-unstyled mb-0">
+                        <li>⚠ BTC dropped below $65k</li>
+                        <li>📢 ETH staking update expected</li>
+                        <li>🔥 DOGE up 10% in last 6h</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Events -->
+        <div class="col-md-4 mb-3">
+            <div class="card shadow-sm">
+                <div class="card-header bg-info text-white">📅 Upcoming Events</div>
+                <div class="card-body">
+                    <p>🧠 Web3 Dev Conference - Jun 14</p>
+                    <p>🌍 Global Crypto Expo - Jul 3</p>
+                    <p>🎯 Cardano Summit - Aug 21</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
